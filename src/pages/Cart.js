@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
@@ -13,12 +13,10 @@ function Cart() {
   const [show, setShow] = useState(false);
   const cartArray = useSelector(state => state.cart);
   const dispatch = useDispatch();
-  const [totalPrice, setTotalPrice] = useState(0);
 
-  const calculateTotalPrice = () => {
-    const total = cartArray.reduce((sum, item) => sum + item.price, 0);
-    setTotalPrice(total);
-  };
+  const totalPrice = useMemo(() => {
+    return cartArray.reduce((sum, item) => sum + item.price, 0);
+  }, [cartArray]);
 
   const payment = () => {
     dispatch(emptyCart());
@@ -27,8 +25,8 @@ function Cart() {
   };
 
   useEffect(() => {
-    calculateTotalPrice();
-  }, [cartArray, calculateTotalPrice]); // Include calculateTotalPrice as a dependency
+    // Any side effects related to cartArray can be handled here
+  }, [cartArray]);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
