@@ -3,6 +3,7 @@ import Table from 'react-bootstrap/Table';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from '../redux/cartSlice';
 import { removeItemWishList } from '../redux/wishListSlice';
+import { Link } from 'react-router-dom';
 
 function WishList() {
   const wishListArray = useSelector(state => state.wishList);
