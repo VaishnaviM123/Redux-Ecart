@@ -18,7 +18,6 @@ const cartSlice = createSlice({
       return state.filter(item => item.id !== action.payload);
     },
     emptyCart: () => {
-      toast("Cart emptied");
       return [];
     }
   }
