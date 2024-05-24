@@ -1,6 +1,5 @@
-import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 
 function Footer() {
   return (
@@ -23,22 +22,22 @@ function Footer() {
             <a href="https://www.myntra.com/" target="_blank" style={{textDecoration:'none',color:'white'}}>Myntra</a><br />
             <a href="https://www.flipkartwholesale.com/" target="_blank" style={{textDecoration:'none',color:'white'}}>Flipkart Wholesale</a><br />
             <a href="https://www.cleartrip.com/" target="_blank" style={{textDecoration:'none',color:'white'}}>Clear Trip</a><br />
-            <a href="https://www.shopsy.in/" target="_blank" style={{textDecoration:'none',color:'white'}}>shopsy</a><br />
+            <a href="https://www.shopsy.in/" target="_blank" style={{textDecoration:'none',color:'white'}}>Shopsy</a><br />
             </Col>
             <Col>
                 <h3 className='fw-bold text-black'>Socials</h3>
                 <div className='icons fs-1 d-flex justify-content-around'>
-                    <a><i class="fa-brands fa-whatsapp me-2 i1"></i></a>
-                    <a><i class="fa-brands fa-instagram me-2 i1"></i></a>
-                    <a><i class="fa-brands fa-linkedin me-2 i1"></i></a>
-                    <a><i class="fa-brands fa-twitter me-2 i1"></i></a>
+                    <a href="https://wa.me"><i className="fa-brands fa-whatsapp me-2 i1"></i></a>
+                    <a href="https://instagram.com"><i className="fa-brands fa-instagram me-2 i1"></i></a>
+                    <a href="https://linkedin.com"><i className="fa-brands fa-linkedin me-2 i1"></i></a>
+                    <a href="https://twitter.com"><i className="fa-brands fa-twitter me-2 i1"></i></a>
                 </div>
             </Col>
             <Container><hr /></Container>
             <p className='text-center'>© 2024 TrendNest.com</p>
         </Row>    
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
