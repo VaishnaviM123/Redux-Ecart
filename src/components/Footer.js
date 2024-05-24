@@ -1,0 +1,44 @@
+import React from 'react'
+import { Col, Container, Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+
+function Footer() {
+  return (
+    <div className='text-white p-5 pb-2' style={{background:'linear-gradient(0deg, rgba(237,152,84,1) 0%, rgba(126,126,126,1) 100%)'}}>
+        <Row className='d-flex'>
+            <Col>
+                <img src="https://i.postimg.cc/Gt31p7wz/logo-2.png" className='image2' alt="..." width='300px' />
+            </Col>
+            <Col sm={12} lg={4} md={6}>
+                <h3 className='fw-bolder text-black'>Registered Address</h3>
+                <p style={{fontFamily:'Sedan SC, serif'}}>TrendsNest Internet Private Limited <br/>
+                011 TrendsNest building<br/>
+                Chelannur Village<br/>
+                Kozhikode, 673616<br/>
+                Kerala, India<br/>
+                Telephone: 044-45614700 / 044-67415800</p>
+            </Col>
+            <Col>
+            <h3 className='fw-bold text-black'>Group Companies</h3>
+            <a href="https://www.myntra.com/" target="_blank" style={{textDecoration:'none',color:'white'}}>Myntra</a><br />
+            <a href="https://www.flipkartwholesale.com/" target="_blank" style={{textDecoration:'none',color:'white'}}>Flipkart Wholesale</a><br />
+            <a href="https://www.cleartrip.com/" target="_blank" style={{textDecoration:'none',color:'white'}}>Clear Trip</a><br />
+            <a href="https://www.shopsy.in/" target="_blank" style={{textDecoration:'none',color:'white'}}>shopsy</a><br />
+            </Col>
+            <Col>
+                <h3 className='fw-bold text-black'>Socials</h3>
+                <div className='icons fs-1 d-flex justify-content-around'>
+                    <a><i class="fa-brands fa-whatsapp me-2 i1"></i></a>
+                    <a><i class="fa-brands fa-instagram me-2 i1"></i></a>
+                    <a><i class="fa-brands fa-linkedin me-2 i1"></i></a>
+                    <a><i class="fa-brands fa-twitter me-2 i1"></i></a>
+                </div>
+            </Col>
+            <Container><hr /></Container>
+            <p className='text-center'>© 2024 TrendNest.com</p>
+        </Row>    
+    </div>
+  )
+}
+
+export default Footer
