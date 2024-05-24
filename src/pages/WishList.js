@@ -43,8 +43,8 @@ function WishList() {
                     <td><Link to={`/singleview/${item.id}`}><img src={item.image} alt={item.title} style={{ width: '40px', height: '40px' }} /></Link></td>
                     <td>
                       <span className='d-flex justify-content-center align-item-center' style={{ gap: "25px" }}>
-                        <a style={{ color: '#FF004D', fontSize: '20px' }} onClick={() => dispatch(removeItemWishList(item.id))}><i className="i2 fa-solid fa-trash-can" /></a>
-                        <a style={{ color: '#7D0A0A', fontSize: '20px' }} onClick={() => addToCartFunction(item)}><i className="i2 fa-solid fa-cart-shopping" /></a>
+                        <span style={{ color: '#FF004D', fontSize: '20px' }} onClick={() => dispatch(removeItemWishList(item.id))}><i className="i2 fa-solid fa-trash-can" /></span>
+                        <span style={{ color: '#7D0A0A', fontSize: '20px' }} onClick={() => addToCartFunction(item)}><i className="i2 fa-solid fa-cart-shopping" /></span>
                       </span>
                     </td>
                   </tr>

@@ -71,7 +71,7 @@ function Cart() {
                     <td>{item.title}</td>
                     <td>{item.price} $</td>
                     <td><Link to={`/singleview/${item.id}`}><img src={item.image} width='40px' height='40px' alt={item.title} /></Link></td>
-                    <td><a style={{ color: 'red', fontSize: '20px' }} onClick={() => dispatch(removeItem(item.id))}><i className="i2 fa-solid fa-trash-can"></i></a></td>
+                    <td><span style={{ color: 'red', fontSize: '20px' }} onClick={() => dispatch(removeItem(item.id))}><i className="i2 fa-solid fa-trash-can"></i></span></td>
                   </tr>
                 )}
               </tbody>
