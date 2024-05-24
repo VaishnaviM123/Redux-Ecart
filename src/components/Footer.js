@@ -19,14 +19,14 @@ function Footer() {
             </Col>
             <Col>
             <h3 className='fw-bold text-black'>Group Companies</h3>
-            <a href="https://www.myntra.com/" target="_blank" style={{textDecoration:'none',color:'white'}}>Myntra</a><br />
-            <a href="https://www.flipkartwholesale.com/" target="_blank" style={{textDecoration:'none',color:'white'}}>Flipkart Wholesale</a><br />
-            <a href="https://www.cleartrip.com/" target="_blank" style={{textDecoration:'none',color:'white'}}>Clear Trip</a><br />
-            <a href="https://www.shopsy.in/" target="_blank" style={{textDecoration:'none',color:'white'}}>Shopsy</a><br />
+            <a href="https://www.myntra.com/" rel="noreferrer" style={{textDecoration:'none',color:'white'}}>Myntra</a><br />
+            <a href="https://www.flipkartwholesale.com/" rel="noreferrer" style={{textDecoration:'none',color:'white'}}>Flipkart Wholesale</a><br />
+            <a href="https://www.cleartrip.com/" rel="noreferrer" style={{textDecoration:'none',color:'white'}}>Clear Trip</a><br />
+            <a href="https://www.shopsy.in/" rel="noreferrer" style={{textDecoration:'none',color:'white'}}>Shopsy</a><br />
             </Col>
             <Col>
                 <h3 className='fw-bold text-black'>Socials</h3>
-                <div className='icons fs-1 d-flex justify-content-around'>
+                <div className='icons fs-1 d-flex justify-content-around text-white'>
                     <a href="https://wa.me"><i className="fa-brands fa-whatsapp me-2 i1"></i></a>
                     <a href="https://instagram.com"><i className="fa-brands fa-instagram me-2 i1"></i></a>
                     <a href="https://linkedin.com"><i className="fa-brands fa-linkedin me-2 i1"></i></a>
