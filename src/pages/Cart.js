@@ -20,15 +20,15 @@ function Cart() {
     setTotalPrice(total);
   };
 
-  const payment=()=>{
-    dispatch(emptyCart())
-    toast("Order confirmed. It will reach you shortly.")
-    handleClose()
-  }
+  const payment = () => {
+    dispatch(emptyCart());
+    toast("Order confirmed. It will reach you shortly.");
+    handleClose();
+  };
 
   useEffect(() => {
     calculateTotalPrice();
-  }, [cartArray]);
+  }, [cartArray, calculateTotalPrice]); // Include calculateTotalPrice as a dependency
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
