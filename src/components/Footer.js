@@ -6,7 +6,7 @@ function Footer() {
     <div className='text-white p-5 pb-2' style={{background:'linear-gradient(0deg, rgba(237,152,84,1) 0%, rgba(126,126,126,1) 100%)'}}>
         <Row className='d-flex'>
             <Col>
-                <img src="https://i.postimg.cc/Gt31p7wz/logo-2.png" className='image2 p-0 m-0' alt="..." width='300px' />
+                <img src="https://i.postimg.cc/Gt31p7wz/logo-2.png" className='image2 p-0 m-0' alt="..." width='280px' />
             </Col>
             <Col sm={12} lg={4} md={6}>
                 <h3 className='fw-bolder text-black'>Registered Address</h3>
