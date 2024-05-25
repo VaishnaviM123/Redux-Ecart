@@ -35,7 +35,7 @@ function Landing() {
         </Carousel>
       </div>
       <div className='container w-100 d-flex align-items-center mb-3 mt-5'>
-        <Row className='mt-5 p-5' style={{boxShadow: '#AF8F6F 2px 1px 2px 0px, #AF8F6F 2px 2px 6px 2px',background:'linear-gradient(0deg, rgba(250,240,232,1) 0%, rgba(230,227,227,1) 100%)',borderRadius:'10px'}}>
+        <Row className='mt-5' style={{boxShadow: '#AF8F6F 2px 1px 2px 0px, #AF8F6F 2px 2px 6px 2px',background:'linear-gradient(0deg, rgba(250,240,232,1) 0%, rgba(230,227,227,1) 100%)',borderRadius:'10px'}}>
           <Col>
             <h2 style={{ fontFamily: 'Lakki Reddy, serif', fontWeight: '800', color:'#8E3E63', fontSize: '40px', textAlign: 'center', paddingTop: '10px' }}>
               Quick and reliable delivery to your doorstep
